@@ -1,1 +1,245 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEREK | Portafolio Profesional</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.5/css/all.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
+
+    <a href="#inicio" id="scroll-top" class="btn btn-warning rounded-circle shadow-lg" aria-label="Ir al inicio de la página">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <header id="inicio" class="fixed-top">
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                    <img src="img/logo.svg" alt="Logotipo DEREK" width="40" height="40" class="me-2">
+                    <span class="fw-bold text-accent">DEREK</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#perfil" data-lang-key="nav_perfil">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#valores" data-lang-key="nav_valores">Valores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proyectos" data-lang-key="nav_proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mision-vision" data-lang-key="nav_mision">Misión/Visión</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto" data-lang-key="nav_contacto">Contacto</a></li>
+                        
+                        <li class="nav-item ms-lg-3">
+                            <div class="form-check form-switch d-flex align-items-center">
+                                <label class="form-check-label text-light me-2" for="languageSwitch" data-lang-key="lang_es">ES</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="languageSwitch" aria-label="Cambiar idioma entre Español e Inglés">
+                                <label class="form-check-label text-light ms-2" for="languageSwitch" data-lang-key="lang_en">EN</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <section id="perfil" class="hero text-center py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold text-accent" data-lang-key="hero_title">DEREK</h1>
+                <h2 class="h3 mb-4 text-light" data-lang-key="hero_subtitle">Diseñando el futuro, pieza a pieza.</h2>
+                <p class="lead" data-lang-key="hero_profile">
+                    Ingeniero en Desarrollo de Software enfocado en el diseño de soluciones digitales robustas y escalables.
+                </p>
+                
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center pt-3">
+                    <a href="assets/curriculum_derek.pdf" download class="btn btn-primary btn-lg px-4" data-lang-key="btn_cv">
+                        <i class="fas fa-download me-2"></i>Descargar CV (PDF)
+                    </a>
+                    <a href="#contacto" class="btn btn-outline-secondary btn-lg px-4" data-lang-key="btn_contact">Contactar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="valores" class="py-5 bg-dark-section">
+            <div class="container">
+                <h2 class="text-center mb-5 text-light" data-lang-key="values_title">Valores Profesionales</h2>
+                <div class="row text-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="p-4 border-start border-warning border-4 h-100 animated-card">
+                            <i class="fas fa-graduation-cap fa-3x mb-3 text-accent"></i>
+                            <h3 class="h5" data-lang-key="value1_title">Aprendizaje Continuo</h3>
+                            <p data-lang-key="value1_desc">Mantenerse actualizado con las nuevas tecnologías y metodologías de desarrollo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="p-4 border-start border-warning border-4 h-100 animated-card">
+                            <i class="fas fa-users fa-3x mb-3 text-accent"></i>
+                            <h3 class="h5" data-lang-key="value2_title">Respeto</h3>
+                            <p data-lang-key="value2_desc">Promuevo un ambiente de colaboración donde se valoran las ideas, el tiempo y el trabajo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="p-4 border-start border-warning border-4 h-100 animated-card">
+                            <i class="fas fa-bullseye fa-3x mb-3 text-accent"></i>
+                            <h3 class="h5" data-lang-key="value3_title">Precisión</h3>
+                            <p data-lang-key="value3_desc">Garantizar que el código y el diseño cumplan estrictamente con los requisitos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="p-4 border-start border-warning border-4 h-100 animated-card">
+                            <i class="fas fa-lightbulb fa-3x mb-3 text-accent"></i>
+                            <h3 class="h5" data-lang-key="value4_title">Resolución de Problemas</h3>
+                            <p data-lang-key="value4_desc">Ver los desafíos técnicos como oportunidades para diseñar soluciones ingeniosas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-light" data-lang-key="projects_title">Proyectos Desarrollados</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 project-card shadow-lg">
+                             
+                            <img src="img/img_trabajo_1.jpg" class="card-img-top" alt="Imagen del Proyecto 1">
+                            <div class="card-body">
+                                <h5 class="card-title text-accent" data-lang-key="proj1_title">E-commerce de Ropa</h5>
+                                <p class="card-text text-dark" data-lang-key="proj1_desc">Plataforma completa de comercio electrónico.</p>
+                                <p class="card-text technologies-text"><small data-lang-key="proj1_tech">**Tecnologías:** ReactJS, Bootstrap 5, NodeJS, MongoDB</small></p>
+                            </div>
+                            <div class="project-overlay">
+                                <p class="overlay-text" data-lang-key="proj1_overlay">Ver Detalle</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 project-card shadow-lg">
+                             
+                            <img src="img/img_trabajo_2.jpg" class="card-img-top" alt="Imagen del Proyecto 2">
+                            <div class="card-body">
+                                <h5 class="card-title text-accent" data-lang-key="proj2_title">API de Gestión de Tareas</h5>
+                                <p class="card-text text-dark" data-lang-key="proj2_desc">Backend RESTful para manejo de usuarios y tareas.</p>
+                                <p class="card-text technologies-text"><small data-lang-key="proj2_tech">**Tecnologías:** PHP (Laravel), MySQL</small></p>
+                            </div>
+                            <div class="project-overlay">
+                                <p class="overlay-text" data-lang-key="proj2_overlay">Ver Detalle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 project-card shadow-lg">
+                            
+                            <img src="img/img_trabajo_3.jpg" class="card-img-top" alt="Imagen del Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title text-accent" data-lang-key="proj3_title">Página Corporativa</h5>
+                                <p class="card-text text-dark" data-lang-key="proj3_desc">Web informativa con enfoque en accesibilidad y UX/UI.</p>
+                                <p class="card-text technologies-text"><small data-lang-key="proj3_tech">**Tecnologías:** HTML5, CSS3, JavaScript Vainilla</small></p>
+                            </div>
+                            <div class="project-overlay">
+                                <p class="overlay-text" data-lang-key="proj3_overlay">Ver Detalle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="mision-vision" class="py-5 bg-dark-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="p-4 h-100 bg-secondary-dark rounded shadow">
+                            <h3 class="text-accent mb-3" data-lang-key="mission_title">Misión</h3>
+                            <p data-lang-key="mission_desc">
+                                Aplicar las mejores prácticas de ingeniería de software para construir soluciones digitales que resuelvan problemas reales, contribuyendo con precisión y funcionalidad en cada proyecto que desarrolle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-4 h-100 bg-secondary-dark rounded shadow">
+                            <h3 class="text-accent mb-3" data-lang-key="vision_title">Visión</h3>
+                            <p data-lang-key="vision_desc">
+                                Convertirme en un desarrollador senior que lidere equipos y proyectos de alto impacto, diseñando y manteniendo arquitecturas de software innovadoras y eficientes a largo plazo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-light" data-lang-key="contact_title">Hablemos de tu Proyecto</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form id="contactForm" class="p-4 rounded shadow-lg bg-dark-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label" data-lang-key="form_name">Nombre Completo</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label" data-lang-key="form_email">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label" data-lang-key="form_message">Mensaje / Breve descripción del proyecto</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent-submit w-100" data-lang-key="form_submit">
+                                Enviar Mensaje
+                            </button>
+                            <div id="formMessage" class="mt-3" style="display: none;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-3">
+                <a href="https://www.linkedin.com/in/derek-adrian-chavarria-mata-17" target="_blank" class="text-light mx-2 link-hover" aria-label="LinkedIn de DEREK">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/Derekder" target="_blank" class="text-light mx-2 link-hover" aria-label="GitHub de DEREK">
+                    <i class="fab fa-github-square fa-2x"></i>
+                </a>
+                <a href="mailto:dchavarriam@ucenfotec.ac.cr" class="text-light mx-2 link-hover" aria-label="Correo electrónico de DEREK">
+                    <i class="fas fa-envelope-square fa-2x"></i>
+                </a>
+                <a href="https://wa.me/50671470696?text=Hola%20Derek,%20vengo%20de%20tu%20Portafolio%20Web%20y%20me%20interesa%20un%20proyecto." target="_blank" class="text-light mx-2 link-hover" aria-label="Chat de WhatsApp de DEREK">
+                    <i class="fab fa-whatsapp-square fa-2x text-whatsapp-color"></i>
+                </a>
+            </p>
+            
+            <p class="small mb-0" data-lang-key="footer_note">
+                Portafolio desarrollado con HTML5, CSS3, Bootstrap 5 y JavaScript. © 2025 DEREK.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
