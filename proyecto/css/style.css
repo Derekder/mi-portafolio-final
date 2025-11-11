@@ -1,1 +1,176 @@
+/* ------------------------------------------------------------------ */
+/* PALETA DE COLORES (Regla 60-30-10) */
+/* ------------------------------------------------------------------ */
+:root {
+    --color-primary: #2C3E50; /* 60% Azul Marino Oscuro (Fondo Principal) */
+    --color-secondary: #ECF0F1; /* 30% Gris Claro (Texto principal) */
+    --color-accent: #E67E22; /* 10% Naranja (Acento, Títulos, Botones) */
+    --color-dark-section: #263645; /* Variante para secciones */
+    --color-dark-form: #34495e; /* Variante para formulario de contacto */
+}
 
+/* ------------------------------------------------------------------ */
+/* TIPOGRAFÍA (Open Sans para párrafos, Montserrat para títulos) */
+/* ------------------------------------------------------------------ */
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-accent); 
+}
+
+body {
+    background-color: var(--color-primary); /* 60% */
+    color: var(--color-secondary); /* 30% */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Clases de utilidad */
+.text-light { color: var(--color-secondary) !important; }
+.text-accent { color: var(--color-accent) !important; }
+.bg-dark-section { background-color: var(--color-dark-section); }
+.bg-secondary-dark { background-color: #34495e; }
+.bg-dark-form { background-color: var(--color-dark-form); }
+
+/* ------------------------------------------------------------------ */
+/* NAVBAR / ENCABEZADO */
+/* ------------------------------------------------------------------ */
+.navbar {
+    background-color: var(--color-primary);
+    border-bottom: 2px solid var(--color-accent); 
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-secondary);
+    transition: color 0.3s ease; /* Requisito 11: Transición sutil */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-accent) !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* BOTONES Y FORMULARIO */
+/* ------------------------------------------------------------------ */
+.btn-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-primary); 
+    transition: background-color 0.3s ease, transform 0.2s; 
+}
+
+.btn-primary:hover {
+    background-color: #d17120; 
+    border-color: #d17120;
+    transform: translateY(-2px); /* Requisito 14: Micro interacción */
+}
+
+.btn-outline-secondary {
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.btn-accent-submit {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-accent-submit:hover {
+    background-color: #d17120;
+    color: var(--color-secondary);
+}
+
+/* ------------------------------------------------------------------ */
+/* GALERÍA DE PROYECTOS (Requisito 10, 11) */
+/* ------------------------------------------------------------------ */
+.project-card {
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Requisito 11: Efecto de transición */
+}
+
+.project-card:hover .card-img-top {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+/* Overlay Interactivo (Parte del Requisito 10) */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 126, 34, 0.85); /* 10% de color con transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------ */
+/* VALORES - Efectos Sutiles (Requisito 11, 13) */
+/* ------------------------------------------------------------------ */
+.animated-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-card:hover {
+    transform: translateY(-5px); /* Requisito 14: Micro interacción: ligero levantamiento */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------------------------------------ */
+/* BOTÓN SCROLL-TOP (Requisito 14) */
+/* ------------------------------------------------------------------ */
+#scroll-top {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 0.75rem;
+    background-color: var(--color-accent) !important;
+    border: none;
+    color: var(--color-primary);
+    transition: transform 0.2s ease;
+}
+
+#scroll-top:hover {
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------ */
+/* CHAT WHATSAPP (Requisito 13) */
+/* ------------------------------------------------------------------ */
+.text-whatsapp-color {
+    color: #25D366; 
+}
